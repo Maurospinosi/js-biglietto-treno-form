@@ -1,7 +1,10 @@
+/* Generale */
 *{
   box-sizing: border-box;
   padding: 0;
   margin:0;
+}
+body{
   background-color: #B91450;
   font-family: 'Open Sans', sans-serif;
 }
@@ -9,7 +12,134 @@
   max-width:1170px;
   margin: auto;
 }
+@media screen and (max-width:555px) {
+  .nome-pass h4{
+    font-size: 15px;
+  }
+  .nome-pass h5{
+    font-size: 15px;
+  }
+  .nome-pass{
+    width: 50%;
+  }
+}
+@media screen and (min-width:556px) and (max-width:650px) {
+  .nome-pass h4{
+    font-size: 15px;
+  }
+  .nome-pass h5{
+    font-size: 15px;
+  }
+  .nome-pass{
+    width: 30%;
+  }
+}
+@media screen and (min-width:650px) {
+  .nome-pass h4{
+    font-size: 20px;
+  }
+  .nome-pass h5{
+    font-size: 20px;
+  }
+  .nome-pass{
+    width: 25%;
+  }
+}
+/* Generale */
+
+/* Primo box (Calcola il prezzo) */
 h2{
   color: white;
   text-align: center;
+  padding:15px 0;
 }
+.box-one{
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+label{
+  color:#B91450;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+input, select{
+  border: #B91450 1px solid;
+  padding:5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+input::placeholder{
+  color:grey;
+  font-weight: 500;
+}
+input:focus, select:focus{
+  background-color: #B91450;
+  color: white;
+  border: 2px solid black;
+}
+input:hover, select:hover{
+  cursor: pointer;
+}
+input:focus::placeholder{
+  color: white;
+}
+select{
+  background-color: lightgrey;
+}
+.button{
+  color: #B91450;
+  background-color: lightgrey;
+  font-weight: 700;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.button:hover{
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+}
+/* Primo box (Calcola il prezzo) */
+
+/* Secondo box (Il biglietto) */
+.container-box-two{
+  background-color: white;
+  padding:20px;
+}
+.box-two{
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+}
+.nome-pass{
+  background-color: grey;
+  padding: 20px;
+}
+li{
+  list-style: none;
+  padding: 20px 20px;
+}
+ul{
+  display: inline-block;
+}
+/* Secondo box (Il biglietto) */

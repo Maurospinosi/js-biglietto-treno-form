@@ -10,30 +10,75 @@
 </head>
 <body>
   <div class="container">
+    <!-- Primo box (Calcola il prezzo) -->
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     <div class="box-one">
+      <!-- input : nome, km, età -->
       <div class="row">
         <div class="col">
-          <label for="Nome">NOME E COGNOME</label>
-          <input id="name" type="text" name="" value="" placeholder="Inserisci il tuo nome">
+          <label for="nome">Nome Cognome</label>
+          <input id="name" type="text" placeholder="Inserisci il tuo nome">
         </div>
         <div class="col">
           <label for="km">Km da percorrere</label>
-          <input id="km" type="number" name="" value="" placeholder="Inserisci i kilometri">
+          <input id="km" type="number" min="1" placeholder="Inserisci i kilometri">
         </div>
         <div class="col">
-          <label for="">NOME E COGNOME</label>
-          <select class="" name="">
+          <label for="fascia-eta">Fascia d'et&agrave</label>
+          <select id="fascia-eta" name="fascia-eta">
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="minorenne">Minorenne</option>
+            <option value="over 65">Over 65</option>
           </select>
         </div>
       </div>
+      <!-- /input : nome, km, età -->
 
-
+      <!-- bottoni: genera/annulla -->
+      <div class="row">
+        <button type="button" id="genera" class="button" name="Genera">Genera</button>
+        <button type="button" id="annulla" class="button" name="Annulla">Annulla</button>
+      </div>
+      <!-- /bottoni: genera/annulla -->
     </div>
+    <!-- /Primo box (Calcola il prezzo) -->
+
+    <!-- Secondo box (Il biglietto) -->
+    <h2>IL TUO BIGLIETTO</h2>
+    <div class="container-box-two">
+      <h3>DETTAGLIO PASSEGGERI</h3>
+      <div class="box-two">
+        <!-- Nome del passeggero -->
+        <div class="nome-pass">
+          <h4>NOME PASSEGGERO</h4>
+          <h5></h5>
+        </div>
+        <!-- /Nome del passeggero -->
+
+        <!-- Tabella -->
+        <div class="table">
+          <ul>
+            <li><strong>Offerta</strong></li>
+            <li id="offerta">Offerta</li>
+          </ul>
+          <ul>
+            <li><strong>Carrozza</strong></li>
+            <li id="carrozza">Carrozza</li>
+          </ul>
+          <ul>
+            <li><strong>Codice CP</strong></li>
+            <li id="codice-cp">Codice CP</li>
+          </ul>
+          <ul>
+            <li><strong>Costo biglietto</strong></li>
+            <li id="codice-cp">Costo biglietto</li>
+          </ul>
+        </div>
+        <!-- /Tabella -->
+      </div>
+    </div>
+    <!-- /Secondo box (Il biglietto) -->
   </div>
-
-
-
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
