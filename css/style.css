@@ -124,6 +124,8 @@ select{
 .container-box-two{
   background-color: white;
   padding:20px;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .box-two{
   background-color: white;
@@ -143,3 +145,9 @@ ul{
   display: inline-block;
 }
 /* Secondo box (Il biglietto) */
+
+/* Classe js */
+.show{
+  opacity:1;
+}
+/* Classe js */
